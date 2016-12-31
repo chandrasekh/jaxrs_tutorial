@@ -48,6 +48,23 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+  <distributionManagement>
+   <repository>
+        <id>releases</id>
+        <url>http://192.168.12.75:8081/nexus/content/repositories/releases</url>
+    </repository> 
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>Internal Snapshots</name>
+        <url>http://192.168.12.75:8081/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>  
+  <scm>
+    <connection>scm:git:git@github.com:chandrasekh/jaxrs_tutorial.git</connection>
+    <developerConnection>scm:git:git@github.com:chandrasekh/jaxrs_tutorial.git</developerConnection>
+    <url>https://github.com/chandrasekh/jaxrs_tutorial.git</url>
+    <tag>HEAD</tag>
+  </scm> 	
     <build>
         <pluginManagement>
             <plugins>
